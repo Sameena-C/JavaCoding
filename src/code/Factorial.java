@@ -1,0 +1,23 @@
+package code;
+
+import java.util.Scanner;
+
+public class Factorial {
+    static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a number");
+
+        if(scanner.hasNextInt()) {
+
+            int n=scanner.nextInt();
+            int fact = 1;
+            for (int i = 1; i <= n; i++) {
+                fact = fact * i;
+            }
+            System.out.println("Factorial => " + fact);
+        }
+        else {
+            System.out.println("Please enter a valid number and Try again!!");
+        }
+    }
+}
